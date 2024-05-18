@@ -16,10 +16,8 @@ body {
 
 .icon-link:hover {
   text-decoration: none;
-  color: rgb(226, 226, 226);
-
+  color: rgb(205, 205, 205);
 }
-
 
 .container {
   max-width: 1200px;
@@ -32,6 +30,7 @@ header {
   color: #fff;
   padding: 50px 0;
   text-align: center;
+  border-radius: 10px;
 }
 
 header h1 {
@@ -43,6 +42,8 @@ header h1 {
 nav {
   margin-top: 20px;
   text-align: center;
+  border-radius: 10px;
+
 }
 
 nav a {
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #3498db;
+  color: rgb(205, 205, 205);
 }
 
 section {
@@ -73,66 +74,15 @@ section h2 {
   margin-bottom: 20px;
 }
 
-ul.skills-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0;
-}
 
-ul.skills-list li {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  font-family: 'Quicksand', sans-serif;
-  width: 200px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-ul.skills-list li span {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-ul.skills-list li:hover span {
-  opacity: 1;
-}
-
-ul.skills-list li:hover {
-  transform: scale(1.1);
-}
 
 p {
   font-size: 1.1em;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Additional Styling for List Items */
 ul {
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin-bottom: 8px;
-  font-size: 1.1em;
-  font-family: 'Open Sans', sans-serif;
-  color: #444;
-}
-
-li:before {
-  content: '•';
-  color: #3498db;
-  margin-right: 8px;
+  padding: 15px;
 }
 
 footer {
@@ -142,52 +92,6 @@ footer {
   padding: 20px 0;
   width: 100%;
   font-family: 'Quicksand', sans-serif;
-}
-
-ul.skills-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul.skills-list li {
-  font-family: 'Quicksand', sans-serif;
-  margin: 10px;
-  position: relative;
-  cursor: pointer;
-}
-
-ul.skills-list li:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 30%; /* Adjust the height as per your preference */
-  background-color: #3498db;
-  opacity: 0;
-  z-index: -1;
-  border-radius: 5px;
-  transition: opacity 0.3s ease-in-out;
-}
-
-ul.skills-list li:hover:before {
-  opacity: 0.3;
-}
-
-ul.skills-list li:hover span {
-  opacity: 1;
-}
-
-ul.skills-list li span {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
 }
 
 nav {
@@ -211,57 +115,6 @@ nav a {
   transform: translateY(0);
 }
 
-#projects {
-  border: 2px solid #3498db;
-  box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
-}
-
-#hero {
-  background: url('hero-background.jpg') center/cover no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
-}
-
-#hero h1 {
-  font-size: 4em;
-}
-
-#hero p {
-  font-size: 1.2em;
-  margin-top: 20px;
-}
-
-#work-experience {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#work-experience p {
-  flex: 1;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-#projects img {
-  transition: transform 0.3s ease-in-out;
-}
-
-#projects img:hover {
-  transform: scale(1.1);
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #3498db;
-  border-radius: 10px;
-}
 
 footer {
   background: linear-gradient(to right, #333, #3498db);
@@ -271,3 +124,95 @@ footer {
   width: 100%;
   font-family: 'Quicksand', sans-serif;
 }
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work-header, .train, .proj-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-entry, .responsibility,.education-entry, .training ,.project, #additional{
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 30px;
+}
+
+.skill-item {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-box {
+  display: none;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px; /* Adjust the width as necessary */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.language-box {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item:hover .popup-box {
+  display: block;
+  animation: popup-animation 0.3s forwards;
+}
+
+@keyframes popup-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+ul.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
