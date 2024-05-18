@@ -8,6 +8,19 @@ body {
   line-height: 1.6;
 }
 
+.icon-link {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.icon-link:hover {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -131,8 +144,6 @@ footer {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* ... (unchanged CSS) ... */
-
 ul.skills-list {
   list-style-type: none;
   padding: 0;
@@ -191,9 +202,8 @@ nav a {
 }
 
 .animated-section {
-  opacity: 0.5;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: 1s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .animated-section.active {
