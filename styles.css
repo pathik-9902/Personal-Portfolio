@@ -25,6 +25,13 @@ header {
   border-radius: 10px;
 }
 
+header p {
+  text-align: center;
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 header h1 {
   text-align: center;
   margin: 0;
@@ -127,8 +134,7 @@ h2 {
 .popup-box {
   display: none;
   position: absolute;
-  bottom: 110%;
-  left: 50%;
+  bottom: 75%;
   transform: translateX(-50%);
   width: 220px;
   background-color: white;
@@ -139,7 +145,7 @@ h2 {
   z-index: 1000;
 }
 
-.language-box {
+.item-box {
   background-color: #3498db;
   color: #fff;
   padding: 10px;
@@ -153,7 +159,7 @@ h2 {
 
 .skill-item:hover .popup-box {
   display: block;
-  animation: popup-animation 0.3s forwards;
+  animation: popup-animation 0.7s forwards;
 }
 
 @keyframes popup-animation {
@@ -172,10 +178,7 @@ ul.skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0;
 }
-
-
 
 @keyframes fadeIn {
   from {
@@ -188,9 +191,11 @@ ul.skills-list {
   }
 }
 
+
 .animated-section {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
+
 
 .animated-section {
   opacity: 0; 
