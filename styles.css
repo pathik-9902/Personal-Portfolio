@@ -1,49 +1,40 @@
+/* General Styles */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif,'Quicksand';
   box-sizing: border-box;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #ecf0f1;
+  color: #2c3e50;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.icon-link {
-  color: white;
+a {
+  color: #2980b9;
   text-decoration: none;
-  font-size: 19px;
 }
 
-.icon-link:hover {
+a:hover {
+  color: #e74c3c;
   text-decoration: none;
-  color: rgb(205, 205, 205);
 }
 
+/* Header Styles */
 header {
-  background-color: #3498db;
+  background-color: #2c3e50;
   color: #fff;
   padding: 50px 0;
   text-align: center;
   border-radius: 10px;
-}
-
-header p {
-  text-align: center;
-  margin: 0;
-  font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-header h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 3em;
-  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
 nav {
   margin-top: 20px;
   text-align: center;
   border-radius: 10px;
-  background-color: #3498db;
+  background-color: #2980b9;
   padding: 15px 0;
 }
 
@@ -51,199 +42,151 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.2em;
-  transition: color 0.3s ease-in-out;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
+  transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-  color: rgb(205, 205, 205);
-}
-
+/* Section Styles */
 .section {
   margin-bottom: 40px;
-  background-color: #ecf0f1;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 section h2 {
-  color: #3498db;
+  color: #2980b9;
   font-size: 2.5em;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  font-family: 'Quicksand', sans-serif;
 }
 
+/* Footer Styles */
 footer {
-  background: linear-gradient(to right, #333, #3498db);
+  background: linear-gradient(to right, #34495e, #2c3e50);
   color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  font-family: 'Quicksand', sans-serif;
+  text-align:
+center;
+padding: 20px 0;
+width: 100%;
 }
 
+/* Content Styles */
+.work-header, .train, .proj-entry, .contact-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.work-entry, .responsibility, .education-entry, .training, .project, #additional, .contact-container {
+flex: 1;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+margin: 15px;
+}
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
+text-align: center;
+margin-bottom: 20px;
 }
 
-.work-header, .train, .proj-entry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.work-entry, .responsibility,.education-entry, .training ,.project, #additional{
-  flex: 1;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  margin: 15px;
-}
-
+/* Skill Item Styles */
 .skill-item {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Quicksand', sans-serif;
-  width: 200px;
-  height: 100px;
-  background-color: #3498db;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+position: relative;
+display: inline-block;
+margin: 20px;
+padding: 10px;
+border-radius: 5px;
+font-family: 'Quicksand', sans-serif;
+width: 200px;
+height: 100px;
+background-color: #2980b9;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+transform: scale(1.05);
 }
 
 .popup-box {
-  display: none;
-  position: absolute;
-  bottom: 75%;
-  transform: translateX(-50%);
-  width: 220px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+display: none;
+position: absolute;
+bottom: 75%;
+transform: translateX(-50%);
+width: 220px;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 1000;
 }
 
-.item {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-justify-content: center;}
-
 .item-box{
+  height: 70px;
   width: 70px;
-height: 70px;
+}
+
+.item{
+  width: 200px;
+  padding: 10px;
+  background-color: #2980b9;
+  margin: 2px;
+  border-radius: 10px;
 }
 
 .skill-item:hover .popup-box {
-  display: block;
-  animation: popup-animation 0.7s forwards;
+display: block;
+animation: popup-animation 0.7s forwards;
 }
 
 @keyframes popup-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(20px) scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+0% {
+opacity: 0;
+transform: translateY(20px) scale(0.8);
+}
+100% {
+opacity: 1;
+transform: translateY(0) scale(1);
+}
 }
 
 ul.skills-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
+/* Fade-in Animation */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
 
-
 .animated-section {
-  animation: fadeIn 2s ease-in-out;
-}
-
-
-.animated-section {
-  opacity: 0; 
-  transform: translateY(20px);
-  transition: opacity 2s, transform 2s;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 2s, transform 2s;
 }
 
 .animated-section.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.contact-container {
-  background: white;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-h1 {
-  margin-top: 0;
-  font-size: 24px;
-  text-align: center;
-}
-label {
-  display: block;
-  margin: 10px 0 5px;
-}
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #45a049;
+opacity: 1;
+transform: translateY(0);
 }
