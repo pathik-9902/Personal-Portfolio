@@ -222,66 +222,68 @@
       <ul class="skills-list">
         <li class="skill-item">
           Programming Languages
-          <div class="popup-box">
-            <div class="item-box">JAVA</div>
-            <div class="item-box">JavaScript</div>
-            <div class="item-box">Python</div>
-            <div class="item-box">C/C++</div>
-            <div class="item-box">HTML</div>
-            <div class="item-box">CSS</div>
-            <div class="item-box">Scala</div>
-          </div>
+          <div class="popup-box" id="popup-box-1">
+            <img src="img/java.png" class="item-box" alt="JAVA">
+            <img src="img/javascript.png" class="item-box" alt="JavaScript">
+            <img src="img/python.png" class="item-box" alt="Python">
+            <img src="img/cpp.png" class="item-box" alt="C/C++">
+            <img src="img/html.png" class="item-box" alt="HTML">
+            <img src="img/css.png" class="item-box" alt="CSS">
+            <img src="img/scala.png" class="item-box" alt="Scala">
+        </div>
+        
+        
         </li>
 
         <li class="skill-item">
           Developer Tools
           <div class="popup-box">
-            <div class="item-box">VS Code</div>
-            <div class="item-box">lntelli J</div>
-            <div class="item-box">Nodemon</div>
-            <div class="item-box">Power Director</div>
-            <div class="item-box">GitHub</div>
+            <img src="img/vscode.png" class="item-box">
+            <img src="img/intellj.png" class="item-box">
+            <img src="img/nodemon.png" class="item-box">
+            <img src="img/power BI.png" class="item-box">
+            <img src="img/github.png" class="item-box">
           </div>
         </li>
         <li class="skill-item">
           Frameworks / Technologies
           <div class="popup-box">
-            <div class="item-box">React.js</div>
-            <div class="item-box">BootStrap</div>
-            <div class="item-box">Node.js</div>
-            <div class="item-box">Tailwind CSS</div>
-            <div class="item-box">Express js</div>
-            <div class="item-box">MongoDB</div>
-            <div class="item-box">Flask</div>
+            <img src="img/mongodb.png" class="item-box">
+            <img src="img/express.png" class="item-box">
+            <img src="img/react.png" class="item-box">
+            <img src="img/node.png" class="item-box">
+            <img src="img/tailwind.png" class="item-box">
+            <img src="img/bootstrap.png" class="item-box">
+            <img src="img/flask.png" class="item-box">
           </div>
         </li>
         <li class="skill-item">
           Cloud / DBMS
           <div class="popup-box">
-            <div class="item-box">MongoDB</div>
-            <div class="item-box">MySQL</div>
-            <div class="item-box">PostgreSQL</div>
-            <div class="item-box">Docker Hub</div>
+            <img src="img/mongodb.png" class="item-box">
+            <img src="img/mysql.png" class="item-box">
+            <img src="img/postgreSQL.png" class="item-box">
+            <img src="img/docker.png" class="item-box">
           </div>
 
         <li class="skill-item">
           Soft Skills
           <div class="popup-box">
-            <div class="item-box">Data & Research Analytics</div>
-            <div class="item-box">Operations</div>
-            <div class="item-box">Social Media Marketing</div>
-            <div class="item-box">MS Office</div>
-            <div class="item-box">Business & Market Analysis</div>
-            <div class="item-box">Content Writing</div>
+            <div class="item">Data & Research Analytics</div>
+            <div class="item">Operations</div>
+            <div class="item">Social Media Marketing</div>
+            <div class="item">MS Office</div>
+            <div class="item">Business & Market Analysis</div>
+            <div class="item">Content Writing</div>
           </div>
 
         <li class="skill-item">
           Areas of Interest
           <div class="popup-box">
-            <div class="item-box">Artificial intelligence</div>
-            <div class="item-box">Machine Learning</div>
-            <div class="item-box">Generative AI</div>
-            <div class="item-box">AR/VR Technology</div>
+            <div class="item">Artificial intelligence</div>
+            <div class="item">Machine Learning</div>
+            <div class="item">Generative AI</div>
+            <div class="item">AR/VR Technology</div>
           </div>
         </li>
       </ul>
@@ -301,6 +303,18 @@
 
   <footer>
     <div class="container">
+       <h1>Contact Me</h1>
+        <form action="YOUR_FORM_PROCESSING_URL" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <input type="submit" value="Send">
       <p>&copy; 2023 Lord Kratos | Portfolio created by Pathik Patel</p>
     </div>
   </footer>
