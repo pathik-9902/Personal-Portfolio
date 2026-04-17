@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathik Patel | Full Stack Engineer</title>
+    
+    <meta name="description" content="Portfolio of Pathik Patel - B.Tech CSE at PDPU. Full Stack Developer specializing in AI, Data Analytics, and Modern Web.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Plus+Jakarta+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="smooth-scroll">
+    <!-- Noise & Overlay -->
+    <div class="noise-overlay"></div>
+    <div class="blob-bg" id="blob"></div>
+
+    <!-- Page Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-box">
+            <div class="loader-inner"></div>
+            <span class="loader-text">INITIALIZING</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <span class="brand-p">P</span><span class="brand-dot">.</span><span class="brand-p">P</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Start</a></li>
+                <li><a href="#about">Bio</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#experience">History</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" id="menu-btn">
+                <span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+        <div class="hero-canvas-wrap">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h2 class="pre-title reveal">B.Tech Computer Science & Engineering</h2>
+                <h1 class="main-title reveal">PATHIK <span class="gradient-text">PATEL</span></h1>
+                <div class="type-wrap reveal">
+                    <span id="typewriter"></span><span class="cursor">_</span>
+                </div>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn-primary">Explore Work</a>
+                    <a href="mailto:pathik.patel992002@gmail.com" class="btn-outline">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="avatar-frame">
+                    <img src="img/avatar.png" alt="Pathik Patel" id="hero-avatar">
+                    <div class="orb"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Stats -->
+    <section id="about" class="about-section sp">
+        <div class="container">
+            <div class="grid-2">
+                <div class="about-text">
+                    <h5 class="section-tag reveal">OVERVIEW</h5>
+                    <h2 class="section-title reveal">Fusing Code with <span class="gradient-text">Intelligence</span></h2>
+                    <p class="reveal">I am a driven Full Stack Developer from Pandit Deendayal Petroleum University (PDPU) with a CGPA of 9.45. My expertise lies in creating seamless bridges between complex backend logic and elegant frontend experiences.</p>
+                    <p class="reveal">Beyond engineering, I am a <strong>Volleyball Captain</strong> and basketball player, translating leadership from the court to high-performance development teams.</p>
+                </div>
+                <div class="stats-box reveal">
+                    <div class="stat-item glass">
+                        <span class="stat-num" data-target="9.45">0</span>
+                        <span class="stat-lab">CGPA / 10</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-num" data-target="150">0</span>
+                        <span class="stat-lab">Team Lead (150+)</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-num" data-target="94">0</span>
+                        <span class="stat-lab">Senior Sec %</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-num" data-target="93">0</span>
+                        <span class="stat-lab">Secondary %</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="edu-section sp">
+        <div class="container">
+            <div class="center-head">
+                <h5 class="section-tag reveal">ACADEMIA</h5>
+                <h2 class="section-title reveal">Education <span class="gradient-text">Timeline</span></h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card glass reveal">
+                    <span class="edu-year">2021 - 2025</span>
+                    <h3>B.Tech, CSE</h3>
+                    <p>PDPU, Gandhinagar</p>
+                    <div class="edu-badge">CGPA: 9.45/10</div>
+                </div>
+                <div class="edu-card glass reveal">
+                    <span class="edu-year">2021</span>
+                    <h3>Senior Secondary (XII)</h3>
+                    <p>Lancers Army School, Surat (CBSE)</p>
+                    <div class="edu-badge">Percentage: 94.40%</div>
+                </div>
+                <div class="edu-card glass reveal">
+                    <span class="edu-year">2019</span>
+                    <h3>Secondary (X)</h3>
+                    <p>Lancers Army School, Surat (CBSE)</p>
+                    <div class="edu-badge">Percentage: 93.00%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section sp">
+        <div class="container">
+            <div class="center-head">
+                <h5 class="section-tag reveal">ARSENAL</h5>
+                <h2 class="section-title reveal">Tech <span class="gradient-text">Stack</span></h2>
+            </div>
+            <div class="skills-grid" id="skills-list">
+                <div class="skill-group glass reveal">
+                    <div class="skill-head"><i class="fas fa-code"></i><h3>Programming</h3></div>
+                    <div class="skill-pills">
+                        <span>Java</span><span>JavaScript</span><span>Python</span><span>C/C++</span><span>Scala</span><span>HTML5/CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-group glass reveal">
+                    <div class="skill-head"><i class="fas fa-layer-group"></i><h3>Frameworks</h3></div>
+                    <div class="skill-pills">
+                        <span>React.js</span><span>Node.js</span><span>Express</span><span>Flask</span><span>Tailwind</span><span>Bootstrap</span><span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group glass reveal">
+                    <div class="skill-head"><i class="fas fa-tools"></i><h3>Developer Tools</h3></div>
+                    <div class="skill-pills">
+                        <span>VS Code</span><span>IntelliJ</span><span>Nodemon</span><span>PowerBI</span><span>GitHub</span><span>Docker</span><span>AWS</span><span>MySQL</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section sp">
+        <div class="container">
+            <div class="split-head">
+                <div>
+                    <h5 class="section-tag reveal">SHOWCASE</h5>
+                    <h2 class="section-title reveal">Featured <span class="gradient-text">Productions</span></h2>
+                </div>
+            </div>
+            <div class="project-columns" id="project-list">
+                <!-- Mintara Bites -->
+                <div class="project-tile glass reveal" data-tilt>
+                    <div class="p-img"><img src="img/mintara.png" alt="Mintara Bites"></div>
+                    <div class="p-content">
+                        <h3>Mintara Bites</h3>
+                        <p>E-commerce platform for gourmet delights, featuring seamless checkout and a premium aesthetic.</p>
+                        <div class="p-tags"><span>E-Commerce</span><span>UI/UX</span><span>React</span></div>
+                        <div class="p-links"><a href="https://mintarabites.com" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <!-- Scheduling Algo -->
+                <div class="project-tile glass reveal" data-tilt>
+                    <div class="p-img"><img src="img/project1.png" alt="Scheduling Algo"></div>
+                    <div class="p-content">
+                        <h3>Scheduling & Simulation</h3>
+                        <p>Web-based simulation of different algorithms such as Dining Philosophers using Modern Web Tech.</p>
+                        <div class="p-tags"><span>Algorithms</span><span>React</span><span>Node.js</span></div>
+                        <div class="p-links"><a href="#"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <!-- Dynamic Housing -->
+                <div class="project-tile glass reveal" data-tilt>
+                    <div class="p-img"><img src="img/project2.png" alt="Housing Prediction"></div>
+                    <div class="p-content">
+                        <h3>Dynamic Housing Prediction</h3>
+                        <p>ML models collecting and preprocessing large datasets to predict future housing prices accurately.</p>
+                        <div class="p-tags"><span>Python</span><span>AWS</span><span>AI Tools</span></div>
+                        <div class="p-links"><a href="#"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+                <!-- Crop Yield -->
+                <div class="project-tile glass reveal" data-tilt>
+                    <div class="p-img"><img src="img/project3.png" alt="Crop Yield"></div>
+                    <div class="p-content">
+                        <h3>Crop Yield Production</h3>
+                        <p>Leveraging ML algorithms to predict agricultural output through extensive data analysis.</p>
+                        <div class="p-tags"><span>Pandas</span><span>TensorFlow</span><span>Scikit-learn</span></div>
+                        <div class="p-links"><a href="#"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Responsibility -->
+    <section id="experience" class="exp-section sp">
+        <div class="container">
+            <div class="center-head">
+                <h5 class="section-tag reveal">JOURNEY</h5>
+                <h2 class="section-title reveal">Professional <span class="gradient-text">Timeline</span></h2>
+            </div>
+            <div class="exp-list" id="experience-list">
+                <div class="exp-card glass reveal">
+                    <div class="exp-date">Current</div>
+                    <div class="exp-main">
+                        <h3>Core Committee Member</h3>
+                        <p class="company">Science & Technical Committee, PDEU</p>
+                        <ul class="exp-details">
+                            <li>Organizing grand technical fests including "Tesseract".</li>
+                            <li>Leading a massive multidisciplinary team of 150+ members.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-card glass reveal">
+                    <div class="exp-date">May 2023 - Jul 2023</div>
+                    <div class="exp-main">
+                        <h3>Marketing Analyst Intern</h3>
+                        <p class="company">DigiQC, Surat</p>
+                        <ul class="exp-details">
+                            <li>Enhanced construction inspection apps via SEO and strategized marketing via data analysis.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-card glass reveal">
+                    <div class="exp-date">Nov 2023 - Dec 2023</div>
+                    <div class="exp-main">
+                        <h3>Data Analytics Certification</h3>
+                        <p class="company">FreeCodeCamp</p>
+                        <ul class="exp-details">
+                            <li>Mastered Pandas, NumPy, and Matplotlib for real-world data processing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section sp">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h5 class="section-tag reveal">CONNECT</h5>
+                    <h2 class="section-title reveal">Initiate <br><span class="gradient-text">Collaboration.</span></h2>
+                    <div class="info-links reveal">
+                        <div class="social">
+                            <a href="https://github.com/pathik-9902" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/pathik-patel-21aa59222" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap glass reveal">
+                    <form id="contact-form">
+                        <div class="inp-group"><input type="text" id="c-name" placeholder=" " required><label>Name</label></div>
+                        <div class="inp-group"><input type="email" id="c-email" placeholder=" " required><label>Email</label></div>
+                        <div class="inp-group"><textarea id="c-msg" placeholder=" " required></textarea><label>Message</label></div>
+                        <button type="submit" class="btn-primary full">Send Signal</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer sp">
+        <div class="container footer-inner">
+            <div class="f-brand">P.P</div>
+            <p>&copy; 2024 Pathik Patel. Volleyball Captain | Basketball Player | Software Engineer</p>
+            <a href="#hero" class="back-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- ADMIN MODAL -->
+    <div class="modal" id="admin-modal">
+        <div class="modal-content glass">
+            <div class="modal-head"><h2>Content Architect</h2><button id="close-admin">&times;</button></div>
+            <div class="modal-body">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tab-skills">Skills</button>
+                    <button class="tab-btn" data-tab="tab-projects">Projects</button>
+                    <button class="tab-btn" data-tab="tab-experience">Experience</button>
+                </div>
+                <div class="tab-content active" id="tab-skills">
+                    <form id="add-skill-form">
+                        <input type="text" placeholder="Category" id="sk-cat" required>
+                        <input type="text" placeholder="Skills" id="sk-val" required>
+                        <button type="submit" class="btn-primary">Update Arsenal</button>
+                    </form>
+                </div>
+                <div class="tab-content" id="tab-projects">
+                    <form id="add-project-form">
+                        <input type="text" placeholder="Title" id="pr-title" required>
+                        <input type="text" placeholder="Desc" id="pr-desc" required>
+                        <input type="text" placeholder="Tags" id="pr-tags" required>
+                        <button type="submit" class="btn-primary">Deploy Unit</button>
+                    </form>
+                </div>
+                <div class="tab-content" id="tab-experience">
+                    <form id="add-exp-form">
+                        <input type="text" placeholder="Role" id="ex-role" required>
+                        <input type="text" placeholder="Company" id="ex-comp" required>
+                        <input type="text" placeholder="Duration" id="ex-dur" required>
+                        <textarea placeholder="Bullet points" id="ex-desc" required></textarea>
+                        <button type="submit" class="btn-primary">Append Record</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
