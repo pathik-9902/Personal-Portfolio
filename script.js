@@ -1,3 +1,4 @@
+HEAD
 document.addEventListener('DOMContentLoaded', () => {
     // --- 1. Loader ---
     window.addEventListener('load', () => {
@@ -215,8 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('add-project-form').onsubmit = (e) => {
         e.preventDefault();
-        const data = { 
-            title: document.getElementById('pr-title').value, 
+        const data = {
+            title: document.getElementById('pr-title').value,
             desc: document.getElementById('pr-desc').value,
             tags: document.getElementById('pr-tags').value,
             img: document.getElementById('pr-img').value
@@ -229,8 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('add-exp-form').onsubmit = (e) => {
         e.preventDefault();
-        const data = { 
-            role: document.getElementById('ex-role').value, 
+        const data = {
+            role: document.getElementById('ex-role').value,
             comp: document.getElementById('ex-comp').value,
             dur: document.getElementById('ex-dur').value,
             desc: document.getElementById('ex-desc').value
@@ -265,4 +266,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.scrollY > 100) document.getElementById('navbar').classList.add('scrolled');
         else document.getElementById('navbar').classList.remove('scrolled');
     };
+});
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+
+const sections = document.querySelectorAll('.animated-section');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        } else {
+            entry.target.classList.remove('in-view');
+        }
+    });
+});
+
+sections.forEach(section => {
+    observer.observe(section);
 });

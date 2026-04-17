@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌌 Pathik Patel | Full-Stack Architect Portfolio
 
 A world-class, futuristic personal portfolio designed with a focus on **Glassmorphism**, high-end aesthetics, and professional identity. Built for performance and creativity using pure **Vanilla JavaScript, CSS3, and HTML5**.
@@ -47,3 +48,13 @@ This portfolio is open for personal use. Designed with 💜 for Pathik Patel.
 
 ---
 *Created by Antigravity AI*
+=======
+# Personal-Portfolio
+Passionate developer specializing in real estate prediction and web development. Experienced in Flask, ML models, and creative CSS styling. Let's build something amazing together!
+
+# LINK FOR WEBSITE
+'https://pathik-9902.github.io/Personal-Portfolio/'
+
+## For Code
+just run index.html
+>>>>>>> 3994410ea3a666d4586571a282877e829e40f778
