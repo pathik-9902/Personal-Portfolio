@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌌 Pathik Patel | Full-Stack Architect Portfolio
 
 A world-class, futuristic personal portfolio designed with a focus on **Glassmorphism**, high-end aesthetics, and professional identity. Built for performance and creativity using pure **Vanilla JavaScript, CSS3, and HTML5**.
@@ -57,4 +56,3 @@ Passionate developer specializing in real estate prediction and web development.
 
 ## For Code
 just run index.html
->>>>>>> 3994410ea3a666d4586571a282877e829e40f778
