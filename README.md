@@ -46,7 +46,6 @@ Portfolio-v2/
 This portfolio is open for personal use. Designed with 💜 for Pathik Patel.
 
 ---
-*Created by Antigravity AI*
 =======
 # Personal-Portfolio
 Passionate developer specializing in real estate prediction and web development. Experienced in Flask, ML models, and creative CSS styling. Let's build something amazing together!
